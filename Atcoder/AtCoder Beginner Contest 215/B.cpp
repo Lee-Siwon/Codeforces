@@ -1,7 +1,6 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
-#include<string>
 #include<cmath>
 using namespace std;
 
@@ -10,7 +9,14 @@ void init(){
 }
 
 void solve(){
-
+	unsigned long long int x;
+	cin>>x;
+	unsigned long long int count=-1,i=1;
+	while(i<=x){
+		i*=2;
+		count++;
+	}
+	cout<<count;
 }
 
 int main(){
@@ -23,9 +29,6 @@ int main(){
 		solve();
 		cout<<"\n";
 	}*/
-	string x;
-	cin>>x;
-	if(x=="Hello,World!")cout<<"AC";
-	else cout<<"WA";
+	solve();
 }
  
